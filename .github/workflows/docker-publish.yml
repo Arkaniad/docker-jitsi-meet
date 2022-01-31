@@ -8,7 +8,7 @@ on:
     branches: [ main, master, testing ]
 
 env:
-  REGISTRY_BASE_PATH: ghcr.io/matrix-org/docker-jitsi-meet
+  REGISTRY_BASE_PATH: ghcr.io/${{ github.repository }}
   REGISTRY: ghcr.io
   BASE_TAG: ${{ github.ref_name }}
 
