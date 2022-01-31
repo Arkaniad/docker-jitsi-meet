@@ -47,7 +47,7 @@ jobs:
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
         build-args: |
-          "BASE_TAG={{ env.BASE_TAG }}"
+          "BASE_TAG=${{ env.BASE_TAG }}"
           "JITSI_REPO=${{ env.REGISTRY_BASE_PATH }}"
 
   build-push-base-java:
@@ -88,7 +88,7 @@ jobs:
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
         build-args: |
-          "BASE_TAG={{ env.BASE_TAG }}"
+          "BASE_TAG=${{ env.BASE_TAG }}"
           "JITSI_REPO=${{ env.REGISTRY_BASE_PATH }}"
 
   build-push-jibri:
@@ -129,7 +129,7 @@ jobs:
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
         build-args: |
-          "BASE_TAG={{ env.BASE_TAG }}"
+          "BASE_TAG=${{ env.BASE_TAG }}"
           "JITSI_REPO=${{ env.REGISTRY_BASE_PATH }}"
 
   build-push-jicofo:
@@ -170,7 +170,7 @@ jobs:
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
         build-args: |
-          "BASE_TAG={{ env.BASE_TAG }}"
+          "BASE_TAG=${{ env.BASE_TAG }}"
           "JITSI_REPO=${{ env.REGISTRY_BASE_PATH }}"
 
   build-push-jigasi:
@@ -211,7 +211,7 @@ jobs:
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
         build-args: |
-          "BASE_TAG={{ env.BASE_TAG }}"
+          "BASE_TAG=${{ env.BASE_TAG }}"
           "JITSI_REPO=${{ env.REGISTRY_BASE_PATH }}"
 
   build-push-jvb:
@@ -252,7 +252,7 @@ jobs:
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
         build-args: |
-          "BASE_TAG={{ env.BASE_TAG }}"
+          "BASE_TAG=${{ env.BASE_TAG }}"
           "JITSI_REPO=${{ env.REGISTRY_BASE_PATH }}"
 
   build-push-prosody:
@@ -293,7 +293,7 @@ jobs:
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
         build-args: |
-          "BASE_TAG={{ env.BASE_TAG }}"
+          "BASE_TAG=${{ env.BASE_TAG }}"
           "JITSI_REPO=${{ env.REGISTRY_BASE_PATH }}"
 
   build-push-web:
@@ -334,5 +334,5 @@ jobs:
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
         build-args: |
-          "BASE_TAG={{ env.BASE_TAG }}"
+          "BASE_TAG=${{ env.BASE_TAG }}"
           "JITSI_REPO=${{ env.REGISTRY_BASE_PATH }}"
