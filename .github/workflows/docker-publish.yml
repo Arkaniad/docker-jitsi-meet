@@ -10,7 +10,7 @@ on:
 env:
   REGISTRY_BASE_PATH: ghcr.io/matrix-org/docker-jitsi-meet
   REGISTRY: ghcr.io
-  BASE_TAG: ${{ env.GITHUB_REF_NAME }}
+  BASE_TAG: ${{ github.ref_name }}
 
 jobs:
   build-push-base:
