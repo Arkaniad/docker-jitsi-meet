@@ -9,7 +9,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  REGISTRY_BASE_PATH: ghcr.io/${{ github.repository_owner }}/docker-jitsi-meet
+  REGISTRY_BASE_PATH: ghcr.io/arkaniad/docker-jitsi-meet
   BASE_TAG: ${{ github.ref_name }}
 
 jobs:
