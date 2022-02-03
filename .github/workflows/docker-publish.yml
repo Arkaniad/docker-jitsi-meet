@@ -275,7 +275,7 @@ jobs:
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
         build-args: |
-          "BASE_TAG=${{ env.BASE_TAG }}"
+          "BASE_TAG=${{ github.base_ref }}"
           "JITSI_REPO=${{ env.REGISTRY_BASE_PATH }}"
       if: contains(github.ref_name, '/merge')
 
@@ -329,7 +329,7 @@ jobs:
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
         build-args: |
-          "BASE_TAG=${{ env.BASE_TAG }}"
+          "BASE_TAG=${{ github.base_ref }}"
           "JITSI_REPO=${{ env.REGISTRY_BASE_PATH }}"
       if: contains(github.ref_name, '/merge')
 
@@ -383,7 +383,7 @@ jobs:
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
         build-args: |
-          "BASE_TAG=${{ env.BASE_TAG }}"
+          "BASE_TAG=${{ github.base_ref }}"
           "JITSI_REPO=${{ env.REGISTRY_BASE_PATH }}"
       if: contains(github.ref_name, '/merge')
 
@@ -437,6 +437,6 @@ jobs:
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
         build-args: |
-          "BASE_TAG=${{ env.BASE_TAG }}"
+          "BASE_TAG=${{ github.base_ref }}"
           "JITSI_REPO=${{ env.REGISTRY_BASE_PATH }}"
       if: contains(github.ref_name, '/merge')
